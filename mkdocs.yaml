@@ -29,6 +29,13 @@ extra:
         as well as to measure the effectiveness of our documentation and
         whether users find the information they need. With your consent,
         you're helping us to make our documentation better.
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: 한국어
+      link: /ko/
+      lang: ko
 
 # Navigation
 nav:
@@ -173,6 +180,50 @@ markdown_extensions:
 plugins:
   - search
   - macros
+  - i18n:
+      default_language: en
+      languages:
+        en:
+          name: English
+          build: true
+        ko:
+          name: 한국어
+          build: true
+      nav_translations:
+        ko:
+          Home: 홈
+          Introduction & FAQ: 소개 및 FAQ
+          What is A2UI?: A2UI란 무엇인가요?
+          Who is it For?: 누구를 위한 것인가요?
+          How Can I Use It?: 어떻게 사용하나요?
+          Where is it Used?: 어디에 사용되나요?
+          Agent UI Ecosystem: 에이전트 UI 생태계
+          Quickstart: 퀵스타트
+          A2UI Composer ⭐: A2UI 컴포저 ⭐
+          Developer Guides: 개발자 가이드
+          Client Setup: 클라이언트 설정
+          Agent Development: 에이전트 개발
+          Custom Components: 커스텀 컴포넌트
+          Theming & Styling: 테마 및 스타일링
+          Core Concepts: 핵심 개념
+          Overview: 개요
+          Data Flow: 데이터 흐름
+          Components & Structure: 컴포넌트 및 구조
+          Data Binding: 데이터 바인딩
+          Specifications: 명세
+          v0.8 (Stable): v0.8 (안정화 버전)
+          "A2UI Specification": "A2UI 명세"
+          "A2A Extension": "A2A 확장"
+          v0.9 (Draft): v0.9 (초안)
+          Evolution Guide: 발전 가이드
+          "Renderers (Clients)": "렌더러 (클라이언트)"
+          "Transports (Message Passing)": "전송 계층 (메시지 전달)"
+          "Agents (Server-side)": "에이전트 (서버 측)"
+          Community: 커뮤니티
+          Roadmap: 로드맵
+          Reference: 레퍼런스
+          Component Reference: 컴포넌트 레퍼런스
+          Message Reference: 메시지 레퍼런스
   # - include-markdown
   # - mermaid2
   # - llmstxt:

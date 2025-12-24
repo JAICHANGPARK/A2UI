@@ -4,6 +4,7 @@ mkdocs-macros-plugin
 mkdocs-llmstxt
 mkdocs-include-markdown-plugin
 mkdocs-mermaid2-plugin
+mkdocs-static-i18n
 sphinx
 furo
 myst-parser
